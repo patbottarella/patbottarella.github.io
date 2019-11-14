@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <h1>Meine Webseite</h1>
+        <p>Ich heisse Finn und das ist meine webseite</p>
+        <p>Meine Hobbys sind:</p>
+        <ul>
+            <li>Fussball</li>
+            <li>Viedeospiele</li>
+            <li>Handball</li>
+        </ul>
+        <p>Mein Liebling Tier ist</p>
+        <h2>der Kleine Panda</h2>
+        <img id="image" width="400" src="http://www.zoo-duisburg.de/wp-content/uploads/2016/02/roter-panda_PhS_a-300x256.jpg" /> 
+        <a href="http://www.zoo-duisburg.de/wp-content/uploads/2016/02/roter-panda_PhS_a-300x256.jpg">Google Link "kleiner panda"</a>
+        <h2>Mein wochenplan</h2>
+        <table>
+            <tr>
+                <th>Montag</th>
+                <th>Dienstag</th>
+                <th>Mittwoch</th>
+                <th>donnerstag</th>
+                <th>Freitag</th>
+                <th>samstag</th>
+                <th>sonntag</th>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Fussball</td>
+                <td>-</td>
+                <td>Fussball</td>
+                <td>-</td>
+                <td>wochenende</td>
+                <td>wochenende</td>
+            </tr>
+        </table>
+        <button id="alertButton">
+            klicke mich auf keinen fall an (niee!!!)
+        </button>
+        <button id="consoleButton">
+            klick mich auf jeden fall an
+        </button>
+        <script>
+            var button1 = document.getElementById("alertButton");
+            button1.addEventListener("click", function(){
+                alert("👌🏻");
+            })
+
+            var button2 = document.getElementById("consoleButton");
+            button2.addEventListener("click", function(){
+                console.log("XD");
+            })
+
+            var img = document.getElementById("image");
+            img.addEventListener("click", function(){
+               img.style.width = "100%"
+            })
+        </script>
+    </body>
+</html>
